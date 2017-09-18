@@ -2,10 +2,16 @@
 
 ### Useful commands
 
-How to initialize a Git repository:
+How to initialize a local Git repository:
 
 ```bash
 $ git init <repository-name>
+```
+
+How to init a bare repository:
+
+```bash
+$ git init --bare
 ```
 
 How to check repositoty status:
@@ -17,13 +23,19 @@ $ git status
 How to add changes to staging area:
 
 ```bash
-$ git add <file>
+$ git add <file-or-directory>
+```
+
+How to remove changes from staging area:
+
+```bash
+git rm --cached <file-or-dorectory>
 ```
 
 How to add changes from staging area to my local repository:
 
 ```bash
-$ git commit -m "Add a comment changes"
+$ git commit -m "Add a comment to describe commit"
 ```
 
 How to see a commit's log:
@@ -32,13 +44,13 @@ How to see a commit's log:
 $ git log
 ```
 
-How to uptdates changes to master branch:
+How to uptdates changes to remote repository:
 
 ```bash
 $ git push
 ```
 
-How to update my local repository from master branch:
+How to update my local repository from remote repository:
 
 ```bash
 $ git pull
