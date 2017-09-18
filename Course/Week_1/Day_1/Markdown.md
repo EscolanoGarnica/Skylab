@@ -54,4 +54,7 @@ Use ">" for quote and ">>" for two quotes:
 
 ### Comments:
 
+```markdown
 <!-- This is a comment -->
+```
+
