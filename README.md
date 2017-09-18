@@ -1,5 +1,9 @@
 # SKYLAB 2017
 
+### Index
 
-* [WEEK 1](https://github.com/Micheloncio/Skylab/blob/master/Curso/README.md)
+* Precourse: 
+    * [Session 1](): Javascript Strings, Arrays and Numbers
+
+* Course
 
