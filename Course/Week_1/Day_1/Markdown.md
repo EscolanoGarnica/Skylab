@@ -39,11 +39,11 @@ This is [an example][id] reference-style link
 
 ### Emphasizes:
 
-*Italic*
-_Italic_
+*One asterisk*
+_One Underscore_
 
-**Bold**
-__Bold__
+**Two asteriks**
+__Two undescores__
 
 ### Blockquotes:
 
@@ -52,3 +52,6 @@ Use ">" for quote and ">>" for two quotes:
 >First Line
 >> Second line
 
+### Comments:
+
+<!-- This is a comment -->
