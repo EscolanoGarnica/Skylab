@@ -15,6 +15,18 @@ How to list files in directory:
 $ ls
 ```
 
+How to list file in list mode:
+
+```bash
+$ ls -l
+```
+
+How to list hidden files:
+
+```bash
+$ ls -a
+```
+
 How to change directory:
 
 ```bash
@@ -54,7 +66,14 @@ $ less <file>
 How to remove a file:
 
 ```bash
-$ rm
+$ rm <file>
+```
+
+How to remove a directory recursively
+:
+
+```bash
+$ rm -r <directory>
 ```
 
 How to copy a file:
