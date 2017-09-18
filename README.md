@@ -12,5 +12,5 @@
 
 * Course:
     * Week 1
-        - [Day 1](https://github.com/Micheloncio/Skylab/tree/master/Course/Week_1/Day_1): Introduction to the Unix Console, Markdown and Git.
+        - [Day 1](https://github.com/Micheloncio/Skylab/tree/master/Course/Week_1/Day_1): Introduction to the [Unix Console](https://github.com/Micheloncio/Skylab/blob/master/Course/Week_1/Day_1/Console.md), [Markdown](https://github.com/Micheloncio/Skylab/blob/master/Course/Week_1/Day_1/Markdown.md) and [Git](https://github.com/Micheloncio/Skylab/blob/master/Course/Week_1/Day_1/Git.md).
 
