@@ -1,0 +1,33 @@
+
+#cotainer{
+	padding: 9px 4px 30px 4px;
+	width: 450px;
+	text-align: center;
+	background-color:#E6E6E6;
+}
+
+div{
+	text-align: left;
+	background-color:lightgrey;
+	border:1px solid grey;
+}
+table{
+	padding: 10px;
+}
+
+th{
+	font-size: 20px;
+}
+td{
+	width: 150px;
+}
+input{
+	border: 1.5px solid grey;
+	border-radius: 4px;
+}
+button{
+	margin-top: 20px;
+	background: linear-gradient(#BDBDBD, #A4A4A4);;
+	border-radius: 3px;
+	border:none;
+}

@@ -1,0 +1,237 @@
+
+body{
+	background-color: lightgrey;
+	text-align: center;
+}
+/*CSS del TITULO*/
+#titleGame{
+	display: block;
+	width: 620px;
+	height: 125px;
+	border-radius: 0px;
+	border-style: none;
+	margin: auto;
+	margin-top: 0px;
+	transition:  0.3s ease-in-out 0s;
+}
+#titleGame:hover{
+	transform: rotate(4deg);
+}
+h1{
+	font-size: 80px;
+	color:#0947a3;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+h5{
+	font-size: 14px;
+	margin-top: 0px;
+	text-align: right;
+	color:black;
+}
+/*FIN CSS del TITULO*/
+
+/*CSS del MENU*/
+.menu{
+	width: 400px;
+	height: 290px;
+	border-radius: 40px;
+	border: 4px white;
+	border-style: groove ridge ridge groove;
+	text-align: center;
+	margin: auto;
+	margin-top: 50px;
+	background-color: #0947a3;
+}
+#mainMenu{
+	display: block;
+}
+button{
+	display: block;
+	width: auto;
+	border-radius: 50px;
+	border-style: none;
+	margin: auto;
+	margin-top: 45px;
+	font-size: 28px;
+	color: white;
+	background-color: inherit;
+	transition:  0.1s ease-in-out 0s;
+}
+button:hover{
+	cursor:pointer;
+	transform: scale(1.5);
+}
+/*FIN CSS del MENU*/
+
+/*CSS del TUTORIAL*/
+#divTutorial{
+	display: block;
+	width: 560px;
+	border:none;
+	border-radius: 0px;
+	text-align:center;
+	margin: auto;
+	margin-top: 20px;
+;
+}
+#textTutorial{
+	text-align: left;
+	font-size: 22px;
+	color: black;
+}
+/*FIN CSS del TUTORIAL*/
+
+/*CSS del MENU nuevo user*/
+#newUserMenu{
+	display: none;
+}
+#textNewUser{
+	font-size: 26px;
+	width: auto;
+	margin: auto;
+	margin-top: 50px;
+	color:white;
+}
+#inputNewUser{
+	font-size: 36px;
+	width: 350px;
+	height: 50px;
+	margin-top: 50px;
+	text-align: center;
+	border: 3px solid blue;
+	border-radius: 15px;
+}
+/*FIN CSS del MENU nuevo user*/
+
+/*CSS del JUEGO*/
+#game{
+	display: none;
+	width: 100%;
+	border-radius: 0px;
+	border-style: none;
+}
+div{
+	display: inline-block;
+	width: 80px;
+	border: 3px white;
+	border-style: groove ridge ridge groove;
+	border-radius: 100%;
+	margin: 4px 2px 4px 2px;
+	text-align: center;
+	font-size: 50px;
+	color: white;
+}
+
+.letterBlue{
+	background: linear-gradient(#9999ff, #0000FF);
+}
+.letterRed{
+	background: linear-gradient(#ff4d4d, #cc0000);
+}
+.letterGreen{
+	background: linear-gradient(#00ff00, #33cc33);
+}
+#question{
+	font-size: 30px;
+	width: 75%;
+	margin: auto;
+	margin-top: 5%;
+	text-align: center;
+	color:black;
+}
+#answer{
+	font-size: 36px;
+	width: 25%;
+	height: 50px;
+	margin-top: 5px;
+	text-align: center;
+	border: 3px solid blue;
+	border-radius: 15px;
+}
+#textTime{
+	margin-top: 25px;
+	font-size: 70px;
+	color:#0947a3;
+}
+/*FIN CSS del JUEGO*/
+
+/*CSS de la CLASIFICACIÓN*/
+#divClasificacion{
+	display: none;
+	width: 700px;
+	height: auto;
+	border-radius: 40px;
+	border: 4px white;
+	border-style: groove ridge ridge groove;
+	font-size: 1em;
+	text-align: center;
+	margin: auto;
+	margin-top: 50px;
+	background-color: #0947a3;
+}
+table{
+	font-size: 24px;
+	margin: auto;
+	margin-top: 10px;
+}
+th{
+	width: 250px;
+	border:1px solid white;
+	text-align: center;
+}
+td{
+	border:1px solid white;
+}
+td:first-child{
+	text-align: left;
+}
+#buttonClasificacion{
+	margin-top: 10px;
+}
+/*FIN CSS de la CLASIFICACIÓN*/
+
+/*CSS cuando se sale antes de tiempo*/
+#divNoClasificacion{
+	display: none;
+	width: 400px;
+	height: 150px;
+	border-radius: 40px;
+	border: 4px white;
+	border-style: groove ridge ridge groove;
+	font-size: 26px;
+	text-align: center;
+	margin: auto;
+	margin-top: 50px;
+	background-color: #0947a3;
+}
+#textNoClasificacion{
+	font-size: 26px;
+	color:white;
+}
+/*FIN CSS cuando se sale antes de tiempo*/
+
+/*CSS de las OPCIONES*/
+#optionsMenu{
+	display:none;
+}
+#textOptions{
+	font-size: 24px;
+	width: auto;
+	margin: auto;
+	color:white;
+}
+.tableOptions{
+	margin-top: 15px;
+	border: none;
+	height: 60px;
+	text-align: left;
+}
+#buttonOptions{
+	margin-top: 25px;
+}
+select{
+	font-size:24px;
+	border:none;
+	color:#0947a3;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="pasapalabra.css">
+		<script type="text/javascript" src="pasapalabra.js"></script>
+
+		<title>Pasapalabra</title>
+	</head>
+	<body>
+		<div id="titleGame">
+			<h1 id="textTitle">PASAPALABRA</h1>
+			<h5>Por Micheloncio</h5>
+		</div>		
+		<div id="game">
+			<div class="letterBlue" id="letterA">A</div>
+			<div class="letterBlue" id="letterB">B</div>
+			<div class="letterBlue" id="letterC">C</div>
+			<div class="letterBlue" id="letterD">D</div>
+			<div class="letterBlue" id="letterE">E</div>
+			<div class="letterBlue" id="letterF">F</div>
+			<div class="letterBlue" id="letterG">G</div>
+			<div class="letterBlue" id="letterH">H</div>
+			<div class="letterBlue" id="letterI">I</div><br>
+			<div class="letterBlue" id="letterJ">J</div>
+			<div class="letterBlue" id="letterK">K</div>
+			<div class="letterBlue" id="letterL">L</div>
+			<div class="letterBlue" id="letterM">M</div>
+			<div class="letterBlue" id="letterN">N</div>
+			<div class="letterBlue" id="letterÑ">Ñ</div>
+			<div class="letterBlue" id="letterO">O</div>
+			<div class="letterBlue" id="letterP">P</div>
+			<div class="letterBlue" id="letterQ">Q</div><br>
+			<div class="letterBlue" id="letterR">R</div>
+			<div class="letterBlue" id="letterS">S</div>
+			<div class="letterBlue" id="letterT">T</div>
+			<div class="letterBlue" id="letterU">U</div>
+			<div class="letterBlue" id="letterV">V</div>
+			<div class="letterBlue" id="letterW">W</div>
+			<div class="letterBlue" id="letterX">X</div>
+			<div class="letterBlue" id="letterY">Y</div>
+			<div class="letterBlue" id="letterZ">Z</div><br>
+			<p id="question"></p>
+			<input type="textbox" name="answer" id="answer" onkeyup="checkAnswer(event)">
+			<p id="textTime"></p>
+		</div>
+
+		<div class="menu" id="mainMenu">
+			<button onclick="showNewUser()">JUGAR</button>
+			<button onclick="showClasificacion()">CLASIFICACIÓN</button>
+			<button onclick="showOptions()">OPCIONES</button>
+		</div>
+
+		<div class="menu" id="newUserMenu">
+			<p id="textNewUser">Introduce tu nombre y pulsa intro</p>
+			<input type="textbox" name="inputNewUser" id="inputNewUser" onkeyup="startGame()">
+			<button onclick="back()">VOLVER</button>
+		</div>
+		
+		<div id="divClasificacion">
+			<table>
+				<thead>
+					<tr>
+						<th colspan="2">CLASIFICACIÓN</th>
+					</tr>
+					<tr>
+						<th>Nombre</th>
+						<th>Aciertos</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td id="nameRow1">1.</td>
+						<td id="pointsRow1">-</td>
+					</tr>
+					<tr>
+						<td id="nameRow2">2.</td>
+						<td id="pointsRow2">-</td>
+					</tr>
+					<tr>
+						<td id="nameRow3">3.</td>
+						<td id="pointsRow3">-</td>
+					</tr>
+					<tr>
+						<td id="nameRow4">4.</td>
+						<td id="pointsRow4">-</td>
+					</tr>
+					<tr>
+						<td id="nameRow5">5.</td>
+						<td id="pointsRow5">-</td>
+					</tr>
+					<tr>
+						<td id="nameRow6">6.</td>
+						<td id="pointsRow6">-</td>
+					</tr>
+					<tr>
+						<td id="nameRow7">7.</td>
+						<td id="pointsRow7">-</td>
+					</tr>
+					<tr>
+						<td id="nameRow8">8.</td>
+						<td id="pointsRow8">-</td>
+					</tr>
+					<tr>
+						<td id="nameRow9">9.</td>
+						<td id="pointsRow9">-</td>
+					</tr>
+					<tr>
+						<td id="nameRow10">10.</td>
+						<td id="pointsRow10">-</td>
+					</tr>
+				</tbody>
+			</table>
+			<button id="buttonClasificacion" onclick="back()">MENU PRINCIPAL</button><br>
+		</div>
+
+		<div id="divNoClasificacion">
+			<p id="textNoClasificacion">Michel: 10 aciertos</p>
+			<button id="buttonClasificacion" onclick="back()">MENU PRINCIPAL</button>
+		</div>
+
+		<div class="menu" id="optionsMenu">
+			<p id="textOptions">
+			    <table class="tableOptions">
+                	<tr class="tableOptions">
+                    	<td class="tableOptions">
+                    		TIEMPO:
+                    	</td>
+                    	<td class="tableOptions">
+                    		<select name="timeOption" id="timeOption" onchange="changeTime()">
+								<option value="300">300</option>
+			 					<option value="240">240</option>
+			 					<option value="180" selected>180</option>
+								<option value="150">150</option>
+							</select>
+							segundos
+						</td>     
+                	</tr>
+                
+                	<tr class="tableOptions">
+                    	<td class="tableOptions">
+                    		COLOR:
+                    	</td>
+                    	<td class="tableOptions">
+                    		<select name="colorOption" id="colorOption" onchange="changeColor()">
+			 					<option value="blue" selected>AZUL</option>
+			 					<option value="red">ROJO</option>
+			 					<option value="green">VERDE</option>
+			 					<option value="black">NEGRO</option>
+			 					<option value="lila">LILA</option>
+							</select>
+                    	</td>
+                	</tr>
+                
+                	<tr class="tableOptions">
+                    	<td class="tableOptions">
+                    		TUTORIAL:&nbsp;
+                    	</td>
+                    	<td class="tableOptions">
+                    		<select name="tutorialOption" id="tutorialOption" onchange="changeTutorial()">
+			 					<option value="yes" id="optionYes">SI</option>
+			 					<option value="no" id="optionNo">NO</option>
+							</select>
+                    	</td>
+                	</tr>
+        		</table>
+				<button id="buttonOptions" onclick="saveOptions()">GUARDAR</button>
+			</p>								
+		</div>
+
+		<div id="divTutorial">
+			<p id="textTutorial">
+				<strong>Aprende a jugar:</strong><br>
+				-Después de escribir una respuesta, pulsa <strong><em>Intro</em></strong> para validarla.<br>
+				-Escribe todas tus respuestas <strong><em>sin acentos</em></strong>.<br>
+				-Escribe <strong><em>pasapalabra</em></strong> si no quieres responder.<br>
+				-Para salir del juego, escribe <strong><em>end</em></strong> y pulsa Intro.
+			</p>
+		</div>
+	</body>
+</html>
