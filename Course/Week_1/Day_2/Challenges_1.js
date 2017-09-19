@@ -21,7 +21,6 @@ function differenceX1X2(x1,x2)
 		return arrNumbers;
 	}
 }
-
 // END 
 //------------------------------------------------------------------------------------------------------
 
@@ -72,20 +71,160 @@ function multiplicyTable(numberMult)
 EXCERCISE 4:
 
 Write a program that writes in the console all the multiples of 23 less than 500 and at the end writes the 
-sum of all of them
+sum of all of them.
 */
 
 function calculation()
 {
 	var strMultiples= "Elements:";
 
+	var sumMultiples = 0;
+
 	for(var i=0; i<500;i+=23)
 	{
 		strMultiples+= " " + i;
+		sumMultiples += i;
 	}
-	strMultiples *= "\nSum: ";
+	strMultiples += "\nSum: " + sumMultiples;
 
 	return strMultiples;
 }
+// END 
+//------------------------------------------------------------------------------------------------------
 
+/*------------
+EXCERCISE 5:
+
+Define a function max() that takes two numbers as arguments and returns the largest of them. Use the 
+if-then-else construct available in Javascript.
+*/
+
+function max(a,b)
+{
+	if(a>b)
+	{
+		return a;
+	}else if(b>a)
+	{
+		return b;
+	}
+}
+// END 
+//------------------------------------------------------------------------------------------------------
+
+/*------------
+EXCERCISE 6:
+
+Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
+*/
+function maxOfThree(a,b,c)
+{
+	if (a>b && a>c) 
+	{
+		return a;
+	}else if(b>a && b>c)
+	{
+		return b;
+	}else if(c>a && c>b)
+	{
+		return c;
+	}
+}
+// END 
+//------------------------------------------------------------------------------------------------------
+
+/*------------
+EXCERCISE 7:
+
+Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, 
+false otherwise.
+*/
+
+function isVowel(letter)
+{
+	letter = letter[0];
+
+	switch (letter)
+	{
+		case "a":
+			return true;
+			break;
+		case "e":
+			return true;
+			break;
+		case "i":
+			return true;
+			break;
+		case "o":
+			return true;
+			break;
+		case "u":
+			return true;
+			break;
+		default:
+			return false;
+			break;
+	}	
+}
+// END 
+//------------------------------------------------------------------------------------------------------
+
+/*------------
+EXCERCISE 8:
+
+Writes a function that convert a hexadecimal color, "blue" for example "#0000FF" in its RGB representation 
+rgb(0,0,255)". Give the function the name getRGB() and test it with this code
+*/
+
+function getRGB(hexColor)
+{
+	var color1= parseInt(hexColor.substring(1,3),16);
+	var color2= parseInt(hexColor.substring(3,5),16);
+	var color3= parseInt(hexColor.substring(5,7),16);
+	var strRGB = "rgb("+ color1 + "," + color2 + "," + color3 +")";
+	return strRGB;
+}
+// END 
+//------------------------------------------------------------------------------------------------------
+
+/*------------
+EXCERCISE 9:
+Improves the previous function so besides the conversion also identifies some basic colors:
+
+Black: #000000
+White: #FFFFFF
+Red: #FF0000
+Green: #00FF00
+Blue: #0000FF
+*/
+
+function getRGB(hexColor)
+{
+	hexColor = hexColor.toUpperCase();
+	var color1= parseInt(hexColor.substring(1,3),16);
+	var color2= parseInt(hexColor.substring(3,5),16);
+	var color3= parseInt(hexColor.substring(5,7),16);
+	var strRGB = "rgb("+ color1 + "," + color2 + "," + color3 +")";
+
+	switch(hexColor)
+	{
+		case "#000000":
+			strRGB += " black";
+			break;
+		case "#FFFFFF":
+			strRGB += " white";
+			break;
+		case "#FF0000":
+			strRGB += " red";
+			break;
+		case "#00FF00":
+			strRGB += " green";
+			break;
+		case "#0000FF":
+			strRGB += " blue";
+			break;
+	}
+
+	return strRGB;
+}
 
