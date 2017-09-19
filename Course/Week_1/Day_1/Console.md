@@ -51,6 +51,12 @@ How to create a file with content in one command:
 $ echo "<content with spaces>" > helloworld.txt
 ```
 
+How to edit a file text:
+
+```bash
+nano <file>
+```
+
 How to see the content of a text file:
 
 ```bash
