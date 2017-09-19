@@ -14,6 +14,12 @@ How to init a bare repository:
 $ git init --bare
 ```
 
+How to clone a repository, from remote repo to local repo:
+
+```bash
+$ git clone <url>
+```
+
 How to check repositoty status:
 
 ```bash
@@ -54,4 +60,46 @@ How to update my local repository from remote repository:
 
 ```bash
 $ git pull
+```
+
+How to return to a before version:
+
+```bash
+$ git chekcout <commit-code>
+```
+
+How to create a new branch:
+
+```bash
+$ git branch <name-new-branch>
+```
+
+How to create and change a new branch:
+
+```bash
+$ git checkout -b <name-new-branch>
+```
+
+How to see the branch working:
+
+```bash
+$ git branch
+```
+
+How to change branch:
+
+```bash
+$ git branch <name-branch>
+```
+
+How to merge my branch with another branch:
+
+```bash
+$ git merge <name-branch> 
+```
+
+How to delete branch:
+
+```bash
+$ git branch -d <name-branch>
 ```
