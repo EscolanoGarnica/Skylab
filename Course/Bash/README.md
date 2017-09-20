@@ -101,6 +101,21 @@ $ mv <from-file-or-directory> <to-file-or-directory>
 ```
 
 How to move a directory with content:
+
 ```bash
 $ mv -r <from-directory> <to-directory>
 ```
+
+How to clear console:
+
+```bash
+$ clear
+```
+
+How to see commands history:
+
+```bash
+$ history
+```
+
+

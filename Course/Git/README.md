@@ -103,3 +103,9 @@ How to delete branch:
 ```bash
 $ git branch -d <name-branch>
 ```
+
+How to see settings of the repository:
+
+```bash
+$ git config --list
+```
