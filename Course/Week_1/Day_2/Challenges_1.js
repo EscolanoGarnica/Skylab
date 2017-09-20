@@ -31,12 +31,12 @@ function differenceX1X2(x1,x2)
 
 function multiplicyTable()
 {
-	var strTable = "";
+	var strTable = "\n";
 	for(var i =1; i<=10;i++)
 	{
 		for(var j=1; j<=10;j++)
 		{
-			strTable += i*j + " ";
+			strTable += i*j + "\t";
 		}
 		strTable += "\n";
 	}
@@ -53,11 +53,10 @@ function multiplicyTable()
 
 function multiplicyTable(numberMult)
 {
-	var strTable = "";
+	var strTable = "\n";
 	for(var i =1; i<=10;i++)
 	{
-		strTable += i*numberMult + " ";
-		strTable += "\n";
+		strTable += i*numberMult + "\n";
 	}
 	return strTable;
 }
@@ -99,10 +98,15 @@ function max(a,b)
 	if(a>b)
 	{
 		return a;
-	}else if(b>a)
+	}else
 	{
 		return b;
 	}
+}
+//Otra forma:
+function max(a,b)
+{
+	return (a>=b ? a : b; // ? operador ternario, si a es mayor que b, devuelve a si no devuelve b
 }
 //END---------------------------------------------------------------------------------------------------
 
@@ -116,10 +120,10 @@ function maxOfThree(a,b,c)
 	if (a>b && a>c) 
 	{
 		return a;
-	}else if(b>a && b>c)
+	}else if(b>c)
 	{
 		return b;
-	}else if(c>a && c>b)
+	}else
 	{
 		return c;
 	}
@@ -135,29 +139,22 @@ function maxOfThree(a,b,c)
 
 function isVowel(letter)
 {
-	letter = letter[0];
-
-	switch (letter)
+	switch (letter.toLowerCase())
 	{
 		case "a":
-			return true;
 			break;
 		case "e":
-			return true;
 			break;
 		case "i":
-			return true;
 			break;
 		case "o":
-			return true;
 			break;
 		case "u":
-			return true;
 			break;
 		default:
 			return false;
-			break;
 	}	
+	return true;
 }
 //END---------------------------------------------------------------------------------------------------
 
@@ -170,10 +167,13 @@ function isVowel(letter)
 
 function getRGB(hexColor)
 {
-	var color1= parseInt(hexColor.substring(1,3),16);
-	var color2= parseInt(hexColor.substring(3,5),16);
-	var color3= parseInt(hexColor.substring(5,7),16);
-	var strRGB = "rgb("+ color1 + "," + color2 + "," + color3 +")";
+	if (/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.test(hexColor) === false)
+        return;
+    
+	var color1 = parseInt(hexColor.substring(1,3),16);
+	var color2 = parseInt(hexColor.substring(3,5),16);
+	var color3 = parseInt(hexColor.substring(5,7),16);
+	var strRGB = 'rgb('+ color1 + ',' + color2 + ',' + color3 +')';
 	return strRGB;
 }
 //END---------------------------------------------------------------------------------------------------
@@ -191,28 +191,28 @@ function getRGB(hexColor)
 
 function getRGB(hexColor)
 {
-	hexColor = hexColor.toUpperCase();
+	var _hexColor = hexColor.toUpperCase();
 	var color1= parseInt(hexColor.substring(1,3),16);
 	var color2= parseInt(hexColor.substring(3,5),16);
 	var color3= parseInt(hexColor.substring(5,7),16);
-	var strRGB = "rgb("+ color1 + "," + color2 + "," + color3 +")";
+	var strRGB = 'rgb('+ color1 + ',' + color2 + ',' + color3 +')';
 
-	switch(hexColor)
+	switch(_hexColor)
 	{
-		case "#000000":
-			strRGB += " black";
+		case '#000000':
+			strRGB += ' black';
 			break;
-		case "#FFFFFF":
-			strRGB += " white";
+		case '#FFFFFF':
+			strRGB += ' white';
 			break;
-		case "#FF0000":
-			strRGB += " red";
+		case '#FF0000':
+			strRGB += ' red';
 			break;
-		case "#00FF00":
-			strRGB += " green";
+		case '#00FF00':
+			strRGB += ' green';
 			break;
-		case "#0000FF":
-			strRGB += " blue";
+		case '#0000FF':
+			strRGB += ' blue';
 			break;
 	}
 
