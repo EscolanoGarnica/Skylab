@@ -109,3 +109,36 @@ How to see settings of the repository:
 ```bash
 $ git config --list
 ```
+
+### Working with a fork repo:
+
+How to add remote upstream to pull a fork repo:
+
+```bash
+$ git remote add upstream <link-master-repo>
+```
+
+How to see remote links of my repo
+
+```bash
+$ git remote -v
+```
+
+How to bring the change's from master-repo to my-fork-repo-local:
+
+```bash
+$ git fetch upstream
+```
+
+How to merge(save) changes from upstream/masyrt yo my-fork-repo-local:
+
+```bash
+$ git merge upstream/master
+```
+
+Last step is make a git push, for save changes in my-fork-repo-master:
+
+```bash
+$ git push
+```
+
