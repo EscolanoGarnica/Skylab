@@ -4,12 +4,9 @@
 *
 *Write a JavaScript function to check whether an input is an array or not.
 */
-function isArray(arr)
+function isArray(input)
 {
-	if (arr instanceof Array)
-		return true
-	else
-		return false
+	return input instanceof Array;
 }
 //END---------------------------------------------------------------------
 
@@ -18,13 +15,18 @@ function isArray(arr)
 *
 *Write a JavaScript function to clone an array.
 */
-
 function cloneArray(arr)
 {
 	if (!isArray(arr))
 		return 0;
 
-	var arrClone = arr.map(function(element){ return element;});
+	var arrClone = arr.map(function(element){ 
+		if (element instanceof Array)
+			cloneArray(element);
+	
+		return element;
+		});
+
 	return arrClone;
 }
 //END---------------------------------------------------------------------
@@ -57,6 +59,18 @@ function firstElements(arr,numOfExtracts)
 
 	return arrResult;
 }
+
+//Another and better way:
+function firstElements(arr, numOfExtracts)
+{
+	if(!numOfExtracts)
+		return arr[0];
+	else if(n<0)
+		return [];
+
+	return arr.slice(0, numOfExtracts);
+}
+
 //END---------------------------------------------------------------------
 
 /**
@@ -103,3 +117,15 @@ function joinElements(arr)
 	return arr.join(',');
 }
 //END---------------------------------------------------------------------
+
+/**
+*EXCERCISE 6:
+*
+*Write a JavaScript program which accept a number as input and insert dashes (-) 
+*between each two even numbers. For example if you accept 025468 the output should 
+*be 0-254-6-8.
+*/
+function separateEven(num)
+{
+	for (var i=0;i<num)
+}
