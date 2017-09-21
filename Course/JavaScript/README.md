@@ -6,6 +6,8 @@ All JavaScript objects inherit the properties and methods from their prototype.
 
 If you create a new object type and want to make a function or property for every new object from this type, include your new function or property on prototype.
 
+Also, you can add a function or property in the prototype of a existing object, like Array, String, ... This is know like **polyfil**
+
 Example:
 
 ```Javascript
