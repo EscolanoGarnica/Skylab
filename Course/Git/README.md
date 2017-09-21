@@ -124,6 +124,8 @@ How to see remote links of my repo
 $ git remote -v
 ```
 
+##### 3 steps for update my fork-repo from master-repo:
+
 How to bring the change's from master-repo to my-fork-repo-local:
 
 ```bash
