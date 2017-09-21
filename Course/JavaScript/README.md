@@ -6,20 +6,43 @@ All JavaScript objects inherit the properties and methods from their prototype.
 
 If you create a new object type and want to make a function or property for every new object from this type, include your new function or property on prototype.
 
-Also, you can add a function or property in the prototype of a existing object, like Array, String, ... This is know like **polyfil**
+**Note**: Also, you can add a function or property in the prototype of a existing object, like Array, String, ... This is know like **polyfil**.
 
-Example:
+Example prototype:
 
 ```Javascript
-function Animal(genre,specie)
+function Animal(specie,genre)
 {
-    this.genre = genre;
     this.specie = specie;
+    this.genre = genre;
 }
 
 Animal.prototype.sleep = function(){return 'Im sleeping';}; //this function it's common for all Animal instances.
 ```
 
+Example polyfil:
+
+```Javascript
+Array.prototype.clone = function() { // provides a new function to arrays
+    return this.slice(0);}; // creates a copy of the array
+```
+
+##### Herency with prototype:
+
+With prototype we can inherits functions and properties from other objects.
+
+Example:
+
+
+```Javascript
+function Human(genre) {
+     Animal.call(this, 'human', genre);
+ }
+ 
+ Human.prototype = new Animal(); //Human inherits properties and functions from Animal, so Human contains now a sleep() function
+```
+
+[More Info](https://www.w3schools.com/js/js_object_prototypes.asp)
 
 ### Ternary operator
 
@@ -47,6 +70,47 @@ A regular expression is an object that describes a pattern of characters.
 
 * [Web to translate RegExp](https://regex101.com)
 
+### Hoisting
+
+Javascript allow to declare a var after using a var.
+
+Example:
+
+```Javascript
+function example()
+{
+    x = 5;
+    console.log(x);
+    var x; //makes the var "x" to a local var
+}
+```
+
+[More Info](https://www.w3schools.com/js/js_hoisting.asp)
+
+### call()
+
+The call() function calls a function with a given *this* value and arguments provided individually.
+
+Example:
+
+```Javascript
+function salute(name, name2) {
+    console.log(this.hello + ' ' + name + ', ' + name2);
+}
+
+var english = {
+    hello: 'hello'
+};
+ 
+var german = {
+    hello: 'hallo'
+};
+ 
+salute.call(english, 'ana', 'max'); //print: hello ana, max
+salute.call(german, 'ana', 'max');  //print: hallo ana, max
+```
+
+[More Info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
 
 ## Higher order functions
 
