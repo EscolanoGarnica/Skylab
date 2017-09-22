@@ -13,9 +13,9 @@ function fibonacci(numLong)
 
 	var res = [0,1];
 
-	for(var i=2; i<numLong;i++)
+	for(var i=1; i<numLong;i++)
 	{
-		res.push(res[i-2] + res[i-1]);
+		res.push(res[i-1] + res[i]);
 	}
 	return res;
 }
@@ -46,5 +46,10 @@ function add(input)
 *
 *Write a JavaScript function that reverse a number
 */
+
+function reverseNumber(num)
+{
+	return parseInt(num.toString().split('').reverse().join(''));
+}
 
 
