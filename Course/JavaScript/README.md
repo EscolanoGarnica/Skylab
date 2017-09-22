@@ -62,6 +62,20 @@ condition ? expression1 : expression2
 
 * Expresion2: expresion returned if condition is false.
 
+Example:
+
+```Javascript
+var a = 7; var b = 3;
+
+a>=b ? a : b; //this return a
+
+var a = 7; var b = 9;
+
+a>=b ? a : b; //now return b
+```
+
+[More Info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+
 ### RegExp
 
 A regular expression is an object that describes a pattern of characters.
