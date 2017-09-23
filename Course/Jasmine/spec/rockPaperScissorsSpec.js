@@ -5,10 +5,6 @@ describe('RockPaperScissors',function(){
 		rockPaperScissors = new RockPaperScissors();
 	});
 
-	function getRandomInt()
-	{
-		return Math.floor(Math.random()*3);
-	}
 
 	it('try 2 players rockPaperScissors',function(){
 		var hands = ['PAPER','SCISSORS','ROCK'];
@@ -24,8 +20,8 @@ describe('RockPaperScissors',function(){
        		PAPER_PAPER: 'PAPER vs PAPER => tie!'
        		};
 
-		var hand1 = hands[getRandomInt()];
-		var hand2 = hands[getRandomInt()];
+		var hand1 = hands[getRandomInt(0,2)];
+		var hand2 = hands[getRandomInt(0,2)];
 		var result = rockPaperScissors.play(hand1,hand2);
 
 		expect(result).toBe(posibilites[hand1 + '_' + hand2]);
