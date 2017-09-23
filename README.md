@@ -13,6 +13,7 @@
 * Course:
     * [Bash](https://github.com/Micheloncio/Skylab/tree/master/Course/Bash)
     * [Git](https://github.com/Micheloncio/Skylab/tree/master/Course/Git)
+    * [Jasmine](https://github.com/Micheloncio/Skylab/tree/master/Course/Jasmine)
     * [JavaScript](https://github.com/Micheloncio/Skylab/tree/master/Course/JavaScript)
     * [Markdown](https://github.com/Micheloncio/Skylab/tree/master/Course/Markdown)
 
