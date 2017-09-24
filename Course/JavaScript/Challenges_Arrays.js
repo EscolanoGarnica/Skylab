@@ -127,5 +127,79 @@ function joinElements(arr)
 */
 function separateEven(num)
 {
-	for (var i=0;i<num)
+	var arr = num.toString().split('');
+	
+	for (var i=1;i<arr.length;i++)
+	{
+		if( (arr[i-1] % 2) === 0 && (arr[i] % 2) === 0)
+		{
+			arr.splice(i,0,'-');
+			i++;
+		}
+	}
+	return arr.join('');
 }
+//END---------------------------------------------------------------------
+
+/**
+*EXCERCISE 8:
+*
+*Write a JavaScript program to sort the items of an array.
+*/
+function sortArrayNumbers(arr)
+{
+	var _arr = cloneArray(arr);
+	return _arr.sort(function(a,b){return a - b});
+}
+
+
+//END---------------------------------------------------------------------
+
+/**
+*EXCERCISE 8:
+*
+*Write a JavaScript program to find the most frequent item of an array.
+*/
+
+function findMostFrequent(arr)
+{
+	var _arr = cloneArray(arr);
+	_arr.sort();
+	
+	console.log(_arr);
+
+	var count = countElemMostFreq = 1;
+	var elemMostFreq = '';
+	
+	for(var i = 1; i < _arr.length;i++)
+	{
+		if(_arr[i-1] === _arr[i])
+		{
+			count++;
+		}else{
+			if(count>countElemMostFreq){
+				countElemMostFreq = count;
+				elemMostFreq = _arr[i-1];
+			}
+			count = 1;
+		}
+
+		if (i === _arr.length-1)
+		{
+			if(count>countElemMostFreq){
+				countElemMostFreq = count;
+				elemMostFreq = _arr[i-1];
+			}
+		}
+	}
+	return elemMostFreq + ' ( ' + countElemMostFreq + ' times )';
+}
+//END---------------------------------------------------------------------
+
+/**
+*EXCERCISE 9:
+*
+*Write a JavaScript program which accept a string as input and swap the case of each character.
+*For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'.
+*/
+

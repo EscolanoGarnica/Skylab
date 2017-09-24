@@ -150,7 +150,38 @@ function isBoolean(bool)
 *	0 instead of O
 */
 
-function encodeWord()
+function encodeWord(str)
 {
+	var _str = str;
 
+	_str = _str.replace(/T/g,'7');
+	_str = _str.replace(/A/g,'4');
+	_str = _str.replace(/S/g,'5');
+	_str = _str.replace(/O/g,'0');
+
+	return _str;
 }
+//END---------------------------------------------------------------------------------------------------
+
+/**
+*EXCERCISE 8:
+*
+*Improve the previous function to add a random number between 0 and 1000 every 7 characters
+*/
+
+function encodeWordPlus(str)
+{
+	var _str = encodeWord(str);
+
+	var arr = [];
+
+	for(var i=7;i<_str.length;i+=7)
+	{
+		arr = _str.split('');
+		arr.splice(i-1,0,Math.floor(Math.random()*1000));
+		_str = arr.join('');
+	}
+
+	return _str;
+}
+//ALL-END---------------------------------------------------------------------------------------------------

@@ -51,5 +51,43 @@ function reverseNumber(num)
 {
 	return parseInt(num.toString().split('').reverse().join(''));
 }
+//END-----------------------------------------------------------------------------------
 
+/**
+*EXCERCISE 4:
+*
+*Is Palindrome
+*
+*Write a JavaScript function that checks whether a passed string is palindrome or not A palindrome
+* is word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.
+*/
 
+function checkPalindrome(str)
+{
+	var _str = str.split(' ').join('').toLowerCase();//quito los espacios y las mayusculas
+
+	_str = _str.replace(/á/gi,'a');//quito los acentos
+	_str = _str.replace(/é/gi,'e');
+	_str = _str.replace(/í/gi,'i');
+	_str = _str.replace(/ó/gi,'o');
+	_str = _str.replace(/ú/gi,'u');
+
+	var half = Math.floor((_str.length/2));
+
+	for(var i = 0; i<half; i++)
+	{
+		if(_str[i]!==_str[_str.length-1-i]){
+			return 'no palindre';
+		}
+	}
+	return 'is palindre!!';
+}
+//END-----------------------------------------------------------------------------------
+
+/**
+*EXCERCISE 5:
+*
+*String combinations
+*
+*Write a JavaScript function that generates all combinations of a string
+*/
