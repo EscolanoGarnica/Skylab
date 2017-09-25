@@ -91,3 +91,17 @@ function checkPalindrome(str)
 *
 *Write a JavaScript function that generates all combinations of a string
 */
+
+function stringCombination(str)
+{
+	var actualIndex = 0;
+	var result = [];
+	for (var i = 0; i<str.length; i++)
+	{
+		for (var j = i; j <= str.length; j++)
+		{
+			result.push(str.substring(i,j));
+		}
+	}
+	return result;
+}
