@@ -94,14 +94,75 @@ function checkPalindrome(str)
 
 function stringCombination(str)
 {
-	var actualIndex = 0;
+	if (!str) return;
 	var result = [];
 	for (var i = 0; i<str.length; i++)
 	{
-		for (var j = i; j <= str.length; j++)
+		for (var j = i; j < str.length; j++)
 		{
-			result.push(str.substring(i,j));
+			result.push(str.substring(i,j+1));
 		}
 	}
-	return result;
+	return result.join(',');
 }
+//END-----------------------------------------------------------------------------------
+
+/**
+*EXCERCISE 6:
+*
+*Sort letters
+*
+*Write a JavaScript function that returns a passed string with letters in alphabetical order
+*Assume punctuation and numbers symbols are not included in the passed string.
+*/
+function sortLetters(str)
+{
+	if (!str) return;
+	return str.split('').sort().join('');
+}
+//END-----------------------------------------------------------------------------------
+
+/**
+*EXCERCISE 7:
+*
+* Uppercase First Letter
+*
+*Write a JavaScript function that accepts a string as a parameter and converts the first 
+*letter of each word of the string in upper case
+*/
+
+function uppercaseFirstLetter(str)
+{
+	if (!str) return;
+	var _str = str.toLowerCase();
+	var arr = str.split(' ');
+	for(var i=0; i<arr.length;i++)
+	{
+		arr[i] = arr[i].replace(arr[i][0],arr[i][0].toUpperCase());
+	}
+	return arr.join(' ');
+}
+//END-----------------------------------------------------------------------------------
+
+/**
+*EXCERCISE For me:
+*
+*Occurrencers Letter
+*
+*Write a JavaScript function that accepts two arguments, a string and a letter and the 
+*function will count the number of occurrences of the specified letter within the string.
+*/
+
+function occurrencersLetter(word,letter)
+{
+	var count = 0;
+	arrWord = word.split('');
+
+	for (var i = 0; i<arrWord.length;i++)
+	{
+		if (arrWord[i] === letter)
+			count++;
+	}
+	return count;
+}
+
