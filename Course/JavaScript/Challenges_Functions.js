@@ -64,6 +64,7 @@ function reverseNumber(num)
 
 function checkPalindrome(str)
 {
+	if (!str) return;
 	var _str = str.split(' ').join('').toLowerCase();//quito los espacios y las mayusculas
 
 	_str = _str.replace(/á/gi,'a');//quito los acentos
