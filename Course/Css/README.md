@@ -32,3 +32,8 @@ p::first-line {   /*Only affects to the first line of the <p> elements*/
 ```
 
 [More Info](https://www.w3schools.com/css/css_pseudo_elements.asp)
+
+#### Flexbox:
+
+[Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+[Flexbox Cheat Sheet](http://apps.workflower.fi/css-cheats/?name=flexbox)
