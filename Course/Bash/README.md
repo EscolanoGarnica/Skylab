@@ -39,6 +39,12 @@ How to create a directory:
 $ mkdir
 ```
 
+How to open the present folder:
+
+```bash
+open .
+```
+
 How to create an empty file:
 
 ```bash
