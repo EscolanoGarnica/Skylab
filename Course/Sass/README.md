@@ -33,7 +33,7 @@ $sass --watch <.scss file>:<.css file>
 
 ## Use Scss
 
-#### Variables:
+### Variables:
 
 In Sass we can create variable for store things like colors, fonts, etc and use it later in one or more components. 
 
@@ -65,7 +65,7 @@ h2 {
 }
 ```
 
-#### Nesting:
+### Nesting:
 
 Sass will let you nest your CSS selectors in a way that follows the same visual hierarchy of your HTML. 
 
@@ -105,7 +105,7 @@ nav a {
 }
 ```
 
-#### @extend:
+### @extend:
 
 How to extend a class with the same properties and include news properties for the new class:
 
