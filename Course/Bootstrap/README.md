@@ -4,7 +4,7 @@ Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing
 
 __Important__: For use Bootstrap in own Hhtml, its necessary to load first JQuery, then Popper.js and then Bootstrap, in the own Html file.
 
-Example Starter Template:
+Example Starter Template (v.4.0 Beta):
 
 ```HTML
 <!DOCTYPE html>
