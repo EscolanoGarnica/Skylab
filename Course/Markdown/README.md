@@ -5,6 +5,10 @@
 
 [Google](http://www.google.com "google!")
 
+### Image:
+
+![](route or link)
+
 ### References:
 
 This is [an example][id] reference-style link
