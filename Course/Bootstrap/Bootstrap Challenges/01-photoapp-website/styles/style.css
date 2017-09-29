@@ -6,45 +6,19 @@
 	background-image:url('../img/site_showcase_bg.jpg');
 }
 ._h1{
-	margin-top: 10%;
-	margin-left: 10%;
 	color:white;
 }
 ._p{
-	margin-top: 10%;
-	margin-left: 10%;
 	color:white;	
 	font-size: 18px;
 }
 
 ._img{
 	min-width: 150px;
-	margin-top: 10%;
+	max-width: 220px;
 	width: 30%;
-	margin-left: 10%;
 }
 ._imgIphone{
 	width: 48%;
-	margin-top: 10%;
-}
-@media (max-width:900px){
-    ._imgIphone{
-        display:none;
-    }
-    ._img{
-		margin-bottom: 10%;
-    }
-}
-@media (max-width:650) {
-	._p{
-		text-align: center;
-	}
 }
 
-@media (max-width:450) {
-
-    ._img{
-    	margin-top: 0px;
-		margin-bottom: 0px;
-    }
-}
