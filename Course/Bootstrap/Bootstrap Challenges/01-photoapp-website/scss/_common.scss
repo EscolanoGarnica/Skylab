@@ -1,0 +1,51 @@
+
+html {
+  box-sizing: border-box;
+}
+
+.navbar {
+  margin-bottom:0;
+  .navbar-brand {
+    color: $green-project;
+  }
+}
+
+
+.features {
+  background-color: $green-project;
+  color: white;
+  padding: 40px;
+  ul li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    i {
+      margin-right: 10px;
+    }
+  }
+}
+
+footer {
+  background-color: $bg-footer;
+  color: white;
+  font-size: 15px;
+  nav, p {
+    padding: 15px;
+  }
+  ul li a{
+    color: white;
+    text-decoration: none;
+  }
+  ul li a:hover{
+    color: white;
+    text-decoration: none;
+  }
+  @media (min-width:992px) {
+    & p { text-align: right; }
+  }
+  @media (max-width:992px) {
+    & ul, & p { text-align: center; }
+  }
+}
+
+
+

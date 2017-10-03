@@ -1,0 +1,71 @@
+html {
+  box-sizing: border-box; }
+
+.navbar {
+  margin-bottom: 0; }
+  .navbar .navbar-brand {
+    color: #1caa98; }
+
+.features {
+  background-color: #1caa98;
+  color: white;
+  padding: 40px; }
+  .features ul li {
+    font-size: 20px;
+    margin-bottom: 10px; }
+    .features ul li i {
+      margin-right: 10px; }
+
+footer {
+  background-color: #333333;
+  color: white;
+  font-size: 15px; }
+  footer nav, footer p {
+    padding: 15px; }
+  footer ul li a {
+    color: white;
+    text-decoration: none; }
+  footer ul li a:hover {
+    color: white;
+    text-decoration: none; }
+  @media (min-width: 992px) {
+    footer p {
+      text-align: right; } }
+  @media (max-width: 992px) {
+    footer ul, footer p {
+      text-align: center; } }
+
+.cover {
+  background-image: url("../img/site_showcase_bg.jpg");
+  height: 580px;
+  color: white;
+  overflow: hidden;
+  padding-top: 40px; }
+  .cover h1 {
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 30px; }
+    .cover h1 span {
+      color: #1caa98; }
+  @media (max-width: 768px) {
+    .cover h1, .cover p {
+      text-align: center; }
+    .cover .logos-app-stores img {
+      display: block;
+      margin: 15px auto; } }
+
+.demos-section {
+  margin-top: 50px;
+  margin-bottom: 30px; }
+
+.subheader {
+  background-color: #1caa98;
+  color: white; }
+
+.body-about {
+  padding-top: 40px; }
+
+.contact form {
+  margin-bottom: 30px; }
+
+/*# sourceMappingURL=styles.css.map */

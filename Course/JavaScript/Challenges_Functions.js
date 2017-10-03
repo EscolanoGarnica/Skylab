@@ -157,14 +157,21 @@ function uppercaseFirstLetter(str)
 
 function occurrencersLetter(word,letter)
 {
-	var count = 0;
-	arrWord = word.split('');
+	if ( typeof word === 'unifined' || typeof letter ==='undifined')
+		return;
 
-	for (var i = 0; i<arrWord.length;i++)
-	{
-		if (arrWord[i] === letter)
-			count++;
-	}
-	return count;
+	if (typeof word === 'number')
+		return;
+
+    var count = 0;
+    arrWord = word.split('');
+
+    for (var i = 0; i<arrWord.length;i++)
+    {
+        if (arrWord[i] === letter)
+            count++;
+    }
+    return count;
 }
+
 

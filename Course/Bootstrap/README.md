@@ -32,3 +32,10 @@ Example Starter Template (v.4.0 Beta):
 For work in local, it's better download the file's: JQuery.js, popper.js nad bootstrap.js. For this, enough with enter to URL's and save the file.
 
 __Note__: For see many examples of differents components in Bootstrap, visit: [__bootsnipp__](https://bootsnipp.com)
+
+## Classes
+
+col-md-6
+col-md-offset-1
+glyphicon 
+//TODO
