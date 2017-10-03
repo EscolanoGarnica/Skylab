@@ -18,6 +18,7 @@
     * [HTML 5](https://github.com/Micheloncio/Skylab/tree/master/Course/Html5)
     * [Jasmine](https://github.com/Micheloncio/Skylab/tree/master/Course/Jasmine)
     * [JavaScript](https://github.com/Micheloncio/Skylab/tree/master/Course/JavaScript)
+    * [jQuery](https://github.com/Micheloncio/Skylab/tree/master/Course/jQuery)
     * [Markdown](https://github.com/Micheloncio/Skylab/tree/master/Course/Markdown)
     * [Sass](https://github.com/Micheloncio/Skylab/tree/master/Course/Sass)
     
