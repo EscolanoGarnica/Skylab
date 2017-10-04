@@ -1,7 +1,19 @@
-var token = 'BQAcnT7CkRXB64Ocl4-Hodc3MdR7NFjc4K00GYYWyDLeVo2p0XSNKeeJ1-lMmFniCnggsIjp9_hHumyC77opAsvYkvEPrN8mAKfUMJrCoS3eorR2Gsu-4oiQiiGrD6sNI705ivh_E9e_QO4no3MPKlyDwuB7Pqc';
+var token = 'BQCWvfrg_JsT8ny4NuEC-ALdSjYUXqLUI2YV4W-2ilFfMD1fRtIjiPcU9kFWqytpm10icGPgtPz_XFQkGpe0pbvp0tozPcRt8qVaKrCcdBEqbFdCzHn4Of3WAjUIkxmL2XBL_olynqWb-85NCTZ9AKhOoXzpKiA';
+
+
+var htmlSelectArtists = $('#selectArtists');
+var htmlSelectAlbums = $('#selectAlbums');
+var htmlSelectTracks = $('#selectTracks');
+
+
 
 $('form').submit(search);
 
+/**
+*The Code begins when the user searchs an Artist, i'm use the 'function search'
+*for call ajax and to bring an object with artists profiles, then i call to 'function 
+*pushArtistToSelect' and i pass the object to it.
+*/
 function search(event){
 	event.preventDefault();
 
@@ -13,89 +25,110 @@ function search(event){
     $.ajax({
       url: url,
       headers: {Authorization: 'Bearer ' + token}
-    }).then(getArtist);
+    }).then(pushArtistToSelect);
 
 
 	$('.query').val('');
 }
 
-function getArtist(result){
+/**
+*In 'function pushArtistToSelect' i take the artists and i put them in 
+*select element from html.
+*/
+function pushArtistToSelect(result){
 
-	$('#selectArtists').empty(); //borro los artistas que ya hubiera
-	$('#selectArtists').append('<option>Select Artist</option>');
+	htmlSelectArtists.empty();
+	htmlSelectArtists.append('<option>Select Artist</option>');
 
-	$('#selectArtists').css('display','block');
-	$('#selectAlbums').css('display','none');
-	$('#selectTracks').css('display','none');
+	htmlSelectArtists.css('display','block');
+	htmlSelectAlbums.css('display','none');
+	htmlSelectTracks.css('display','none');
 
 	for(artist of result.artists.items){
-		$('#selectArtists').append('<option data-id="'+ artist.id +'">' + artist.name + '</option>');
+		htmlSelectArtists.append('<option data-id-artist="'+ artist.id +'">' + artist.name + '</option>');
 	}
 }
 
-$('#selectArtists').change(function(){	
-	var id = $('#selectArtists option:selected').data('id');
+/**
+*When the 'select' that contains the artists change, then i take his id and with this one 
+*i use an ajax function to bring the albums from this artist. Next, i call to 'function 
+*pushAlbumsToSelect' and i pass the object to it.
+*/
+htmlSelectArtists.change(function(){	
+	var idArtist = $('#selectArtists option:selected').data('id-artist');
 
-	if (!id){
-		$('#selectAlbums').css('display','none');	
-		$('#selectTracks').css('display','none');	
+	if (!idArtist){
+		htmlSelectAlbums.css('display','none');	
+		htmlSelectTracks.css('display','none');	
 		return;	
 	}
 	
 
-	var url = 'https://api.spotify.com/v1/artists/' + id + '/albums';
+	var url = 'https://api.spotify.com/v1/artists/' + idArtist + '/albums';
 	$.ajax({
       url: url,
       headers: {Authorization: 'Bearer ' + token}
-    }).then(getAlbums);
+    }).then(pushAlbumsToSelect);
 });
 
-function getAlbums(result){
-	$('#selectAlbums').empty();
-	$('#selectAlbums').append('<option>Select Album</option>');
+/**
+*I put albums in select element from html.
+*/
+function pushAlbumsToSelect(result){
+	htmlSelectAlbums.empty();
+	htmlSelectAlbums.append('<option>Select Album</option>');
 
-	$('#selectAlbums').css('display','block');
-	$('#selectTracks').css('display','none');
+	htmlSelectAlbums.css('display','block');
+	htmlSelectTracks.css('display','none');
 
 	for(album of result.items){
-		$('#selectAlbums').append('<option data-id="' + album.id + '">'+album.name+'</option>');
+		htmlSelectAlbums.append('<option data-id-album="' + album.id + '">'+album.name+'</option>');
 	}	
 }
 
-$('#selectAlbums').change(function(){
-	var id = $('#selectAlbums option:selected').data('id');
+/**
+*When change option, i bring the albums tracks
+*/
+htmlSelectAlbums.change(function(){
+	var idAlbum = $('#selectAlbums option:selected').data('id-album');
 	
-	if (!id){
-		$('#selectTracks').css('display','none');		
+	if (!idAlbum){
+		htmlSelectTracks.css('display','none');		
 		return;	
 	}
 
-	var url = '    https://api.spotify.com/v1/albums/'+ id +'/tracks';
+	var url = 'https://api.spotify.com/v1/albums/'+ idAlbum +'/tracks';
 	$.ajax({
       url: url,
       headers: {Authorization: 'Bearer ' + token}
-    }).then(getTracks);
+    }).then(pushTracksToSelect);
 });
 
-function getTracks(result){
-	$('#selectTracks').empty(); //borro las canciones que ya hubiera
-	$('#selectTracks').append('<option>Select Track</option>');
+/**
+*I put songs in select element from html.
+*/
+function pushTracksToSelect(result){
+	htmlSelectTracks.empty(); //borro las canciones que ya hubiera
+	htmlSelectTracks.append('<option>Select Track</option>');
 
-	$('#selectTracks').css('display','block');
+	htmlSelectTracks.css('display','block');
 
 	for(track of result.items){
-		$('#selectTracks').append('<option data-id="' + track.id + '">'+track.name+'</option>');
+		htmlSelectTracks.append('<option data-id-track="' + track.id + '">'+track.name+'</option>');
 	}	
 }
 
-$('#selectTracks').change(function(){
-	var id = $('#selectTracks option:selected').data('id');
+/**
+*When change option, i open a new tab for play the song
+*/
+htmlSelectTracks.change(function(){
+	var idTrack = $('#selectTracks option:selected').data('id-track');
 	
-	if (!id){	
+	if (!idTrack){	
 		return;	
 	}
 
-	var url = 'https://api.spotify.com/v1/tracks/' + id;
+	var url = 'https://api.spotify.com/v1/tracks/' + idTrack;
 
 	$.ajax({
       url: url,
