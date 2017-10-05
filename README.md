@@ -14,6 +14,7 @@
     * [Bash](https://github.com/Micheloncio/Skylab/tree/master/Course/Bash)
     * [Bootstrap](https://github.com/Micheloncio/Skylab/tree/master/Course/Bootstrap)
     * [Css](https://github.com/Micheloncio/Skylab/tree/master/Course/Css)
+    * [ES6](https://github.com/Micheloncio/Skylab/tree/master/Course/ES6)
     * [Git](https://github.com/Micheloncio/Skylab/tree/master/Course/Git)
     * [HTML 5](https://github.com/Micheloncio/Skylab/tree/master/Course/Html5)
     * [Jasmine](https://github.com/Micheloncio/Skylab/tree/master/Course/Jasmine)
