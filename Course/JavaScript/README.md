@@ -1,5 +1,25 @@
 # JAVASCRIPT: Advanced Concepts
 
+### For in
+
+```Javascript
+var arr = ['a','b','c','d','e'];
+
+for(item in arr){
+    console.log(item)   //this print: 0 1 2 3 4 
+}
+```
+
+### For of
+
+```Javascript
+var arr = ['a','b','c','d','e'];
+
+for(item in arr){
+    console.log(item)   //this print: a b c d e 
+}
+```
+
 ### Prototype
 
 All JavaScript objects inherit the properties and methods from their prototype. 
