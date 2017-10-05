@@ -135,7 +135,7 @@ htmlSelectTracks.change(function(){
       headers: {Authorization: 'Bearer ' + token}
     }).then(playTrack);
 });
-
+op
 function playTrack(track){
 	window.open(track.external_urls.spotify,'_blank');
 }

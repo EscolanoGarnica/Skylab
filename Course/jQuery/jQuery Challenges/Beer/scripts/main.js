@@ -1,3 +1,10 @@
+// User interface
+
+//Api calls
+
+//View rendering
+
+
 $('form').submit(search);
 
 function search(event) {
