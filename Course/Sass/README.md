@@ -136,3 +136,44 @@ Result css:
 }
 ```
 
+### Import:
+
+CSS has an import option that lets you split your CSS into smaller, more maintainable portions.
+
+Example:
+
+```Sass
+//reset.scss
+
+html,body,ul,ol{
+  margin:  0;
+  padding: 0;
+}
+```
+
+```Sass
+//base.scss 
+
+@import 'reset';  //don't need to include the file extension .scss
+
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
+}
+```
+
+When you generate the CSS you'll get:
+
+```Css
+html, body, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
+}
+```
+
+
