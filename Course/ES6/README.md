@@ -4,16 +4,16 @@ ECMAScript 6 (ES6) is the version 6 of Javascript. Introduces important changes,
 
 ## Index concepts:
 
-1. Arrow Function
-2. Let and Const
-3. Template strings
-4. Enhanced object properties
-5. Rest Operator
-6. Spread Operator
-7. Destructuring assignment
-8. Set
-9. Map
-10. Promise
+1. [Arrow Function](#Arrow-function)
+2. [Let and Const](#Let-and-Const)
+3. [Template strings](#Template-Strings)
+4. [Enhanced object properties](#Enhanced-object-properties)
+5. [Rest Operator](#Rest-operator)
+6. [Spread Operator](#Spread-operator)
+7. [Destructuring assignment](#Destructuring-assignment)
+8. [Set](#Set)
+9. [Map](#Map)
+10. [Promise](#Promise)
 11. [Classes](#Classes)
 
 ### Arrow function
