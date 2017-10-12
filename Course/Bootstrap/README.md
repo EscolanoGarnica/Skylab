@@ -33,9 +33,10 @@ For work in local, it's better download the file's: JQuery.js, popper.js nad boo
 
 __Note__: For see many examples of differents components in Bootstrap, visit: [__bootsnipp__](https://bootsnipp.com)
 
-## Classes
+**Important:** for a correct render in smartphones, include in <head>:
 
-col-md-6
-col-md-offset-1
-glyphicon 
-//TODO
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+__Important:__ [Manual oficial de Bootstrap](http://librosweb.es/libro/bootstrap_3/)
