@@ -13,7 +13,7 @@
 * Course:
     * [Aixos](https://github.com/Micheloncio/Skylab/tree/master/Course/FrontEnd/Axios)
     * [Bash](https://github.com/Micheloncio/Skylab/tree/master/Course/FrontEnd/Bash)
-    * [Bootstrap](https://github.com/Micheloncio/Skylab/tree/master/FrontEnd/Course/Bootstrap)
+    * [Bootstrap](https://github.com/Micheloncio/Skylab/tree/master/Course/FrontEnd/Bootstrap)
     * [Css](https://github.com/Micheloncio/Skylab/tree/master/Course/FrontEnd/Css)
     * [ES6](https://github.com/Micheloncio/Skylab/tree/master/Course/FrontEnd/ES6)
     * [Git](https://github.com/Micheloncio/Skylab/tree/master/Course/FrontEnd/Git)
