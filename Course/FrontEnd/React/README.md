@@ -12,6 +12,10 @@ To create reacte App's, follow the steps in:
 ///
 React.createElement
 React.component
+render()
+componentDidMount():se lanza despues de cargar un componente
+componentWillReceiveProps(): se lanza después de cambiar una propiedad
+withRouter (componente de react-route, para poder utilizar: this.props.history)
 estados: this.state 
 ////
 

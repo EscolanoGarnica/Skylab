@@ -7,9 +7,12 @@ const beersApi =  {
     	return axios.get(this.baseUrl + '/search/all?q=' + query)
     },
 
-    getBeer: function (id, callback) {
+    getBeer: function (id) {
         return axios.get(this.baseUrl + '/beer/' + id)
-    }
+    .then(function({data}) {
+                return data
+            })
+	}
 }
 
 export default beersApi

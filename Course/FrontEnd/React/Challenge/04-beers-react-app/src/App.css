@@ -1,0 +1,24 @@
+@font-face{
+	font-family: 'IndieFlower';
+	src: url('./styles/IndieFlower.ttf');
+}
+
+*{
+	font-family: IndieFlower, Verdana;
+}
+body{
+	background: linear-gradient(135deg,#14DA7D,#34FF1F,#07924D);
+	background-repeat: no-repeat;
+	height: 805px;
+
+}
+
+h1{
+	color:white;
+	font-size: 64px;
+	transition:  0.3s linear 0s;
+}
+
+h1:hover{
+	transform: rotate(4deg);
+}

@@ -1,5 +1,5 @@
 import React, {Component} from 'react' 
-import beersApi from './beersApi'
+import './SearchBeer.css'
 
 class SearchBeers extends Component{
 
@@ -31,9 +31,9 @@ class SearchBeers extends Component{
 	
 
 	render(){
-		return <div>
-			<input onChange={this.onTextChange} value={this.state.text} type="textbox"></input>
-    	    <button onClick={this.handlerClickSearch}>Search beers</button>
+		return <div className='text-center'>
+			<input className='form-control inputText' onChange={this.onTextChange} value={this.state.text} type="text" placeholder='Write here a beer brand'></input>
+    	    <button className='btn btn-success' onClick={this.handlerClickSearch}>Search beers</button>
     	</div>
 	}
 }
