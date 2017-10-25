@@ -26,5 +26,10 @@
     * [Markdown](https://github.com/Micheloncio/Skylab/tree/master/Course/FrontEnd/Markdown)
     * [React](https://github.com/Micheloncio/Skylab/tree/master/Course/FrontEnd/React)
     * [Sass](https://github.com/Micheloncio/Skylab/tree/master/Course/FrontEnd/Sass)
+
+* Resources:
+    * [JsHint](http://jshint.com/): tool for detect errors
+    * [Logo Maker](https://logomakr.com/): to generate logos
+    * [Favicon-Generator](https://www.favicon-generator.org/): to generate favincons
     
 
