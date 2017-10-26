@@ -15,7 +15,7 @@ for(item in arr){
 ```Javascript
 var arr = ['a','b','c','d','e'];
 
-for(item in arr){
+for(item of arr){
     console.log(item)   //this print: a b c d e 
 }
 ```
