@@ -124,4 +124,23 @@ How to see commands history:
 $ history
 ```
 
+How to see all process run:
+
+```bash
+$ ps -ax
+```
+
+How to filter process shows:
+
+```bash
+$ ps -ax | grep <filter> //filter example: node
+```
+
+How to kill a proces by his PID(process ID):
+
+```bash
+$ kill -9 <PID>
+```
+
+
 
