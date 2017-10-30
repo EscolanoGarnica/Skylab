@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	form(action='/', method='GET')
+		input(type='text', name='query', value=query)
+		input(type='submit', value='Search')
+	ul(class='ulBeers')
+		each beer in beers
+			li
+				a(key=beer.id href=`/detail/${beer.id}`)= beer.name

@@ -112,3 +112,7 @@ app.post('/ruta',(req,res)=>{               //notese que se usa el .post
         res.send(JSON.stringify(req.body))
     })
 ```
+
+
+__Resources:__
+    * [.env or dotenv](https://www.npmjs.com/package/dotenv): paquete para utilizar variables de entorno.

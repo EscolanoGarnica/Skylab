@@ -1,0 +1,9 @@
+html
+	head
+		title= title
+	body
+		h1 Primeros pasos con Pug
+		p= message
+		ul
+			each friend in friends.length ? friends : ['There are no friends']
+				li= friend
