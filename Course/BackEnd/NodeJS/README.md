@@ -14,6 +14,20 @@ Como ejecutar un script con node desde la consola:
 $ node <file-name>
 ```
 
+### Crear nuevo proyecto node
+
+Para crear un proyecto vacio, ir al directorio donde se desea albergar el proyecto y escribir:
+
+```bash
+$ npm init      //esto inicia la creación de un .jason donde irá pidiendo datos
+```
+
+Para crearlo de forma rápida sin introducir manualmente los datos del .jason:
+
+```bash
+$ npm init --yes
+```
+
 ### Debugar en Node
 
 Como debugar en node desde la consola:
@@ -74,12 +88,18 @@ Process: referente al processo en ejecución. Para ver process en Node:
 $ process //dentro de la consola node
 ```
 
+### Módulos de Node
+
+Node esta compuesto por módulos y cada uno de ellos contiene funciones. Estos módulos se pueden importar mediante require('modulo'), ejemplos de módulos:
+- __File System__ (require('fs')): se utiliza para el tratamiento de ficheros y directorios.
+- __Http__ (require('http')): se utiliza para crear servidores y para conectarse a otras webs.
+
 ### File System
 
 Para utilizar File System en Node, hay que importarlo de la siguiente manera :
 
 ```Javascript
-const fs = require('fs') //hasta que js soporte el import, Node utiliza require para importar
+const fs = require('fs') //hasta que js soporte el import, Ecma Script 6 utiliza require para importar
 ```
 
 
@@ -113,19 +133,5 @@ Ejemplo:
 
 ```Javascript
 const suma = require('./suma')
-```
-
-### Crear nuevo proyecto node
-
-Para crear un proyecto vacio, ir al directorio donde se desea albergar el proyecto y escribir:
-
-```bash
-$ npm init      //esto inicia la creación de un .jason donde irá pidiendo datos
-```
-
-Para crearlo de forma rápida sin introducir manualmente los datos del .jason:
-
-```bash
-$ npm init --yes
 ```
 

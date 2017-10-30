@@ -11,7 +11,7 @@ const route = process.argv[3]
 app.use(express.static(route))
 
 //	const path = require('path')
-// app.use(express.static(process.argv[3] || path.join(__dirnamme, 'public'))) //__dirnamme es la ruta de este script
+// app.use(express.static(process.argv[3] || path.join(__dirname, 'public'))) //__dirname es la ruta de este script
 
 app.listen(PORT)
 

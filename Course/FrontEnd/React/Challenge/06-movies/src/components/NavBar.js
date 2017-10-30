@@ -9,10 +9,8 @@ class NavBar extends Component{
                		<div  className="navbar-collapse collapse">
                		<a className='navbar-brand'>Movie Collection</a>
 					<ul className="nav navbar-nav">
-						<li><NavLink to='/popular'>Popular Movies</NavLink></li>
-						<li><NavLink to='/upcoming'>Upcoming Movies</NavLink></li>
-						<li><NavLink to='/nowPlaying'>Now Playing Movies</NavLink></li>
-						<li><NavLink to='/topRated'>Top Rated Movies</NavLink></li>
+						<li><NavLink to='/list-users'>List users</NavLink></li>
+						<li><NavLink to='/create-user'>Create user</NavLink></li>
 					</ul>
 					</div>
 				</div>
