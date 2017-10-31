@@ -1,3 +1,4 @@
+//creamos las cabeceras con los permisos cross:
 module.exports = (req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*")
     res.header('Access-Control-Request-Method', '*')
@@ -10,5 +11,5 @@ module.exports = (req, res, next) => {
         return res.end()
     }
 
-    next()
+    next() //el next es para que siga la ejecución
 }
