@@ -22,7 +22,7 @@
         * [Jasmine](https://github.com/Micheloncio/Skylab/tree/master/Course/FrontEnd/Jasmine)
         * [JavaScript](https://github.com/Micheloncio/Skylab/tree/master/Course/FrontEnd/JavaScript)
         * [jQuery](https://github.com/Micheloncio/Skylab/tree/master/Course/FrontEnd/jQuery)
-        * [Spotify Challenge(code comented)](https://github.com/Micheloncio/Skylab/tree/master/Course/FrontEnd/jQuery/jQuery%20Challenges/Spotify)
+            * [Spotify Challenge(code comented)](https://github.com/Micheloncio/Skylab/tree/master/Course/FrontEnd/jQuery/jQuery%20Challenges/Spotify)
         * [LocalServer](https://github.com/Micheloncio/Skylab/tree/master/Course/FrontEnd/LocalServer)
         * [Markdown](https://github.com/Micheloncio/Skylab/tree/master/Course/FrontEnd/Markdown)
         * [React](https://github.com/Micheloncio/Skylab/tree/master/Course/FrontEnd/React)
@@ -31,6 +31,8 @@
     * Back-End:
         * [NodeJS](https://github.com/Micheloncio/Skylab/tree/master/Course/BackEnd/NodeJS)
         * [Express](https://github.com/Micheloncio/Skylab/tree/master/Course/BackEnd/Express)
+            * [Users Api(code comented)](https://github.com/Micheloncio/Skylab/tree/master/Course/BackEnd/Express/Challenges/users-api-express-json-v3)
+        * [Pug](https://github.com/Micheloncio/Skylab/tree/master/Course/BackEnd/Pug)
 
 * Resources:
     * [JsHint](http://jshint.com/): tool for detect errors in Javascript.
