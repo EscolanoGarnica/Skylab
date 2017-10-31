@@ -113,6 +113,33 @@ app.post('/ruta',(req,res)=>{               //notese que se usa el .post
     })
 ```
 
+### Router
+
+Router sirve para realizar las llamadas post, get, put y delete, a las rutas sin tener que definirlas cada vez como en los ejemplos anteriores.
+
+Creamos el router:
+
+```Javascript
+const router = express.Router()
+```
+
+Le pasamos el router a Express:
+
+```Javascript
+app.use('/api',router)
+```
+
+Las llamadas con router se harian así:
+
+```Javascript
+router.route('/ruta')
+    .get((req,res)=>{bla bla bla})
+
+    .post((req,res)=>{bla bla bla})
+
+    .put((req,res)=>{bla bla bla})
+```
+
 
 __Resources:__
     * [.env or dotenv](https://www.npmjs.com/package/dotenv): paquete para utilizar variables de entorno.

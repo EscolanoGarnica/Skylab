@@ -1,8 +1,0 @@
-INFO Tue Oct 31 2017 09:34:40 GMT+0100 (CET) Users API: request from IP ::1 to create a user pepito succeeded
-INFO Tue Oct 31 2017 09:37:29 GMT+0100 (CET) Users API: request from IP ::1 to list users succeeded
-INFO Tue Oct 31 2017 09:43:00 GMT+0100 (CET) Users API: request from IP ::1 to list users succeeded
-INFO Tue Oct 31 2017 09:43:12 GMT+0100 (CET) Users API: request from IP ::1 to list users succeeded
-INFO Tue Oct 31 2017 09:43:28 GMT+0100 (CET) Users API: request from IP ::1 to list users succeeded
-INFO Tue Oct 31 2017 09:44:45 GMT+0100 (CET) Users API: request from IP ::1 to retrieve user with id 3242453 succeeded
-WARN Tue Oct 31 2017 09:48:58 GMT+0100 (CET) Users API: Request from IP ::1 to update user with 3242453, but username and/or password wrong, {}
-INFO Tue Oct 31 2017 09:54:29 GMT+0100 (CET) Users API: request from IP ::1 to delete user with id 3242453 succeeded

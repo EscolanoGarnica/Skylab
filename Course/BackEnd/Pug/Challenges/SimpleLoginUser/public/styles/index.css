@@ -1,0 +1,23 @@
+body{
+	text-align: center;
+}
+
+.divForm{
+	background: linear-gradient(135deg,#14DA7D,#34FF1F,#07924D);
+	width: 350px;
+	height: 210px;
+	margin:auto;
+	margin-top: 100px;
+	border-radius: 10px;
+	padding-top: 10px;
+}
+
+h1{
+	color:white;
+}
+label{
+	display: block;
+	margin-top: 5px;
+}
+
+

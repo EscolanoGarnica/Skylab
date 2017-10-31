@@ -1,0 +1,16 @@
+html
+	head
+		title Login User
+		link(rel="stylesheet",href="../styles/index.css")
+	body
+		.divForm
+			h1 Login user
+			form(action="/login" method="post")
+				label User: 
+				input(type='text' name='username' autofocus)
+				br
+				label Pasword: 
+				input(type='password' name='password')
+				br
+				br
+				input(type='submit' value='Login')
