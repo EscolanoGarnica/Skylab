@@ -1,0 +1,23 @@
+
+
+*{
+  background-color: yellow;
+}
+
+.App {
+margin-top:5%;
+  text-align: center;
+}
+
+button{
+  margin:5px;
+}
+
+
+input{
+  background-color: white;
+}
+
+li {
+  list-style:none;
+}

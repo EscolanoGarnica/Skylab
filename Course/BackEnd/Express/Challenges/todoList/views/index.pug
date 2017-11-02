@@ -1,0 +1,21 @@
+html
+	head
+		title
+		style
+			include ../public/styles/index.css
+	body
+		form(action="/" method="post")
+			input(type="text" name="taskName")
+			input(type="submit" value="Add Task")
+		if tasks
+			h2 Todo List
+			ul
+			each task in tasks
+				unless task.done
+					a(href=`/done?id=${task.id}`)
+						li= task.name
+			h2 Done List
+			each task in tasks
+				if task.done
+					a(href=`/delete?id=${task.id}`)
+						li= task.name
