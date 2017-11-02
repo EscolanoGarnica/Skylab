@@ -143,3 +143,5 @@ router.route('/ruta')
 
 __Resources:__
     * [.env or dotenv](https://www.npmjs.com/package/dotenv): paquete para utilizar variables de entorno.
+    * [express-session](https://github.com/expressjs/session): paquete para trabajar con sesiones en express.
+    * [session-file-store](https://www.npmjs.com/package/session-file-store): paquete para almacenar las sesiones en espress. Se usa junto a "express-session"
