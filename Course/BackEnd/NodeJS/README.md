@@ -135,3 +135,6 @@ Ejemplo:
 const suma = require('./suma')
 ```
 
+__Resources:__
+    * [cookie-session](https://github.com/expressjs/cookie-session): paquete para trabajar con cookies personalizadas, no requiere express. Además guarda la sessión data en el servidor.
+    * [Json Web Toke](https://jwt.io/): paquete para crear, codificar y verificar tokens.

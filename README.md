@@ -37,6 +37,7 @@
 
 * Resources:
     * [JsHint](http://jshint.com/): tool for detect errors in Javascript.
+    * [JSONLint](https://jsonlint.com/): tool for detect errors in a JSON.
     * [Logo Maker](https://logomakr.com/): to generate logos.
     * [Favicon-Generator](https://www.favicon-generator.org/): to generate favincons.
     * [Postman](https://www.getpostman.com/): to do GET's, POST's, PUT's and DELETE's, without make client web.
