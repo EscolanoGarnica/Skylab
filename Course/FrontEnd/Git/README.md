@@ -32,6 +32,11 @@ How to add changes to staging area:
 $ git add <file-or-directory>
 ```
 
+How to add all changes to staging area:
+
+```bash
+$ git add -A
+```
 How to remove changes from staging area:
 
 ```bash
