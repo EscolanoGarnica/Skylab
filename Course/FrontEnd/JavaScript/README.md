@@ -47,7 +47,7 @@ Array.prototype.clone = function() { // provides a new function to arrays
     return this.slice(0);}; // creates a copy of the array
 ```
 
-##### Herency with prototype:
+##### Inheritance with prototype:
 
 With prototype we can inherits functions and properties from other objects.
 
