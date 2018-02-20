@@ -142,5 +142,11 @@ How to kill a proces by his PID(process ID):
 $ kill -9 <PID>
 ```
 
+How to find a text in all concrete directories:
+
+```bash
+$ grep -r "string a buscar" <path>
+```
+
 
 
