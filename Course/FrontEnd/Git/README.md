@@ -149,3 +149,8 @@ Last step is make a git push, for save changes in my-fork-repo-master:
 $ git push
 ```
 
+How to inspect pull request at local:
+
+```bash
+$ git fetch origin_or_upstream pull/id_pull_request/head:name_new_branch
+```
